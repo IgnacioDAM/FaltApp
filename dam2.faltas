@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<grupo ciclo="Desarrollo de Aplicaciones Multiplataforma" curso="2" modulo="Desarrollo de Interfaces">
+    <alumnos>
+        <alumno apellidos="Norris" cial="123456789A" fechaNacimiento="1940-03-10" nombre="Chuck">
+            <faltas>
+                <falta fecha="2020-12-07" hora="2" retraso="true"/>
+                <falta fecha="2020-12-03" hora="5" retraso="false"/>
+            </faltas>
+        </alumno>
+        <alumno apellidos="Carradine" cial="987654321Z" fechaNacimiento="1936-12-08" nombre="David">
+            <faltas>
+                <falta fecha="2020-10-07" hora="4" retraso="true"/>
+                <falta fecha="2020-12-03" hora="4" retraso="false"/>
+            </faltas>
+        </alumno>
+    </alumnos>
+</grupo>
