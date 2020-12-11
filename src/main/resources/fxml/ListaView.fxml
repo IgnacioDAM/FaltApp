@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane fx:id="view" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <DatePicker fx:id="fechaPicker">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </DatePicker>
+            <CheckBox fx:id="todasCheck" mnemonicParsing="false" text="Todas">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </CheckBox>
+            <CheckBox fx:id="primeraCheck" mnemonicParsing="false" text="1ª">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </CheckBox>
+            <CheckBox fx:id="segundaCheck" mnemonicParsing="false" text="2ª" />
+            <CheckBox fx:id="terceraCheck" mnemonicParsing="false" text="3ª">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </CheckBox>
+            <CheckBox fx:id="cuartaCheck" mnemonicParsing="false" text="4ª">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </CheckBox>
+            <CheckBox fx:id="quintaCheck" mnemonicParsing="false" text="5ª">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </CheckBox>
+            <CheckBox fx:id="sextaCheck" mnemonicParsing="false" text="6ª">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </CheckBox>
+            <Button fx:id="btnPonerFaltas" mnemonicParsing="false" onAction="#onClickPonerFaltas" text="Poner faltas" />
+         </children>
+         <BorderPane.margin>
+            <Insets left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+      </HBox>
+   </top>
+   <center>
+      <TableView fx:id="faltasTable" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="nombreCompletoColumn" editable="false" prefWidth="259.0" text="Nombre completo" />
+            <TableColumn fx:id="faltaColumn" prefWidth="166.0" text="Falta" />
+          <TableColumn fx:id="retrasoColumn" prefWidth="164.0" text="Retraso" />
+        </columns>
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+      </TableView>
+   </center>
+</BorderPane>

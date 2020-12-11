@@ -37,6 +37,7 @@ public class Main {
 		
 		dam2.guardar(new File("dam2.faltas"));
 		
+		App.main(args);
 	}
 
 }
