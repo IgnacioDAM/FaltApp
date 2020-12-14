@@ -8,6 +8,7 @@
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
@@ -22,10 +23,38 @@
                <menus>
                   <Menu mnemonicParsing="false" text="Archivo">
                      <items>
-                        <MenuItem mnemonicParsing="false" onAction="#onClickNuevo" text="Nuevo" />
-                        <MenuItem mnemonicParsing="false" onAction="#onClickAbrir" text="Abrir" />
-                        <MenuItem mnemonicParsing="false" onAction="#onClickGuardar" text="Guardar..." />
-                        <MenuItem mnemonicParsing="false" onAction="#onClickSalir" text="Salir" />
+                        <MenuItem mnemonicParsing="false" onAction="#onClickNuevo" text="Nuevo">
+                           <graphic>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/new-16x16.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></MenuItem>
+                        <MenuItem mnemonicParsing="false" onAction="#onClickAbrir" text="Abrir">
+                           <graphic>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/open-16x16.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></MenuItem>
+                        <MenuItem mnemonicParsing="false" onAction="#onClickGuardar" text="Guardar...">
+                           <graphic>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/save-16x16.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></MenuItem>
+                        <MenuItem mnemonicParsing="false" onAction="#onClickSalir" text="Salir">
+                           <graphic>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/exit-16x16.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></MenuItem>
                      </items>
                   </Menu>
                </menus>
@@ -37,7 +66,10 @@
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </HBox.margin>
                      <graphic>
-                        <ImageView fx:id="imgNuevo" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="imgNuevo" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/new-32x32.png" />
+                           </image></ImageView>
                      </graphic>
                   </Button>
                   <Button fx:id="btnAbrir" mnemonicParsing="false" onAction="#onClickAbrir">
@@ -45,7 +77,10 @@
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </HBox.margin>
                      <graphic>
-                        <ImageView fx:id="imgAbrir" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="imgAbrir" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/open-32x32.png" />
+                           </image></ImageView>
                      </graphic>
                   </Button>
                   <Button fx:id="btnGuardar" mnemonicParsing="false" onAction="#onClickGuardar">
@@ -53,7 +88,10 @@
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </HBox.margin>
                      <graphic>
-                        <ImageView fx:id="imgGuardar" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="imgGuardar" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/save-32x32.png" />
+                           </image></ImageView>
                      </graphic>
                   </Button>
                   <Separator orientation="VERTICAL" prefHeight="200.0" />
@@ -62,7 +100,10 @@
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </HBox.margin>
                      <graphic>
-                        <ImageView fx:id="imgSalir" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="imgSalir" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/exit-32x32.png" />
+                           </image></ImageView>
                      </graphic>
                   </Button>
                </children></HBox>
